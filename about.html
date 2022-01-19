@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #FFEBCD;
+  color: blue;
+  font-size: large;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #6495ED;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <img src="fruits.jpg">
+  <img src="food.jpg">
+<h1> Our Mission </h1>
+  <p><li>Most people tend to buy more food than they need.
+    Though buying in bulk may be convenient, research has shown that this shopping method leads to more food waste.
+    To avoid buying more food than you need, make frequent trips to the grocery store every few days rather than doing a bulk shopping trip once a week.
+    <li>
+    So to use up all the food you purchased during the last trip to the market and the current inventory which you have in your home.
+    We have created this web application which will help you all to keep a track of your past and your future to buy food items which in turn will help you save food as well as your money.</p>
+  <p>Please visit our site....</p>
+</div>
+
+<h1 style="text-align:center">Our Team</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="fruits.jpg" alt="Karan" style="width:100%">
+      <div class="container">
+        <h2>Karan Lakhadive</h2>
+        <p class="title">Developer</p>
+        <p>Type text...</p>
+        <p>karan@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="fruits.jpg" alt="Mayank" style="width:100%">
+      <div class="container">
+        <h2>Mayank Kalbande</h2>
+        <p class="title">Developer</p>
+        <p>Some text...</p>
+        <p>mdkalbande@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="fruits.jpg" alt="Varun" style="width:100%">
+      <div class="container">
+        <h2>Varun Iyer</h2>
+        <p class="title">Manager</p>
+        <p>Some text...</p>
+        <p>varun@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="fruits.jpg" alt="Shivam" style="width:100%">
+      <div class="container">
+        <h2>Shivam Jha</h2>
+        <p class="title">Backend</p>
+        <p>Some text... </p>
+        <p>shivam@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
